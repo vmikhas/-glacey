@@ -3,35 +3,30 @@
     font-family: $fname;
     font-style: $fstyle;
     font-weight: $fweight;
-    src: url($furlwoff2) format('woff2'), url($furlwoff) format('woff');
+    src: url($furlwoff2) format("woff2"), url($furlwoff) format("woff");
   }
 }
 
 @include font(
-  'Chakra Petch',
+  "Inter",
   normal,
-  600,
-  '../public/fonts/ChakraPetch-SemiBold.woff2',
-  '../public/fonts/ChakraPetch-SemiBold.woff'
+  900,
+  "../public/fonts/Inter-Black.woff2",
+  "../public/fonts/Inter-Black.woff"
 );
+
 @include font(
-  'Chakra Petch',
+  "Inter",
   normal,
-  500,
-  '../public/fonts/ChakraPetch-Medium.woff2',
-  '../public/fonts/ChakraPetch-Medium.woff'
+  700,
+  "../public/fonts/Inter-Bold.woff2",
+  "../public/fonts/Inter-Bold.woff"
 );
+
 @include font(
-  'Chakra Petch',
-  normal,
-  500,
-  '../public/fonts/ChakraPetch-Regular.woff2',
-  '../public/fonts/ChakraPetch-Regular.woff'
-);
-@include font(
-  'Chakra Petch',
+  "Inter",
   normal,
   400,
-  '../public/fonts/ChakraPetch-Light.woff2',
-  '../public/fonts/ChakraPetch-Light.woff'
+  "../public/fonts/Inter-Regular.woff2",
+  "../public/fonts/Inter-Regular.woff"
 );

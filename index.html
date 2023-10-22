@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon32.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="public/favicon/favicon152.png">
+  <title>Gllacy</title>
 </head>
 <body>
-  <script src="/src/js/main.js"></script>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__nav nav">
+        <a class="nav__logo" href="index.html">
+          <img src="public/images/logo.svg" width="137px" height="56px" alt="Логотип Глейси">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">О компании</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__users users">
+        <a class="users__link" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="users__list">
+          <li class="users__item">
+            <button class="users__button users__button--search" type="button"></button>
+          </li>
+          <li class="users__item">
+            <button class="users__button users__button--login" type="button">Вход</button>
+          </li>
+          <li class="users__item">
+            <button class="users__button users__button--cart" type="button">2 товара</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
