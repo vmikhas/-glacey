@@ -14,10 +14,12 @@
 
 .nav__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-left: 17px;
 }
 
 .nav__link {
@@ -25,6 +27,23 @@
     color: inherit;
     line-height: 20px;
     padding: 8px 16px;
+}
+
+.nav__link:hover {
+    background-color: rgba(252, 252, 252, 0.50);
+    border-radius: 30px;
+}
+
+.nav__link:focus {
+    background-color: rgba(252, 252, 252, 0.50);
+    border-radius: 30px;
+    border: 2px solid $extra-dark;
+}
+
+.nav__link:active {
+    background-color: $extra-light;
+    border-radius: 30px;
+    border: none;
 }
 
 .users {
@@ -48,15 +67,81 @@
     padding: 0;
 }
 
+.users__item {
+    padding-left: 16px;
+}
+
 .users__button {
     color: inherit;
     font-size: 14px;
     line-height: 20px;
+    padding: 6px 16px;
     border: none;
-    background-color: inherit;
+    background-color: rgba(252, 252, 252, 0.30);
+    border-radius: 30px;
     cursor: pointer;
+    position: relative;
 }
 
 .users__button--search {
-    background-color: black;
+    padding: 16px;
+}
+
+.users__button--login {
+    padding-left: 39px;
+}
+
+.users__button--cart {
+    padding-left: 39px;
+}
+
+.users__button--search::before {
+    content: "";
+    background-image: url(./images/search.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+}
+
+.users__button--login::before {
+    content: "";
+    background-image: url(./images/login.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 50%);
+}
+
+.users__button--cart::before {
+    content: "";
+    background-image: url(./public/images/cart.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 50%);
+}
+
+.users__button:hover {
+    background-color: rgba(252, 252, 252, 0.50);
+}
+
+.users__button:focus {
+    background-color: rgba(252, 252, 252, 0.50);
+    border: 2px solid $extra-dark;
+}
+
+.users__button:active {
+    background-color: $extra-light;
+    border-radius: 30px;
+    border: none;
 }
