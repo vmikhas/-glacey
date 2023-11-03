@@ -1,7 +1,3 @@
-.promo__slider {
-
-}
-
 .promo__container {
     display: flex;
     justify-content: space-between;
@@ -36,27 +32,338 @@
     border: 4px solid rgba(252, 200, 200, 0.40);
 }
 
-.icecream__list {
+// slide-1
+
+.icecream {
+    position: relative;
+    padding-top: 22px;
+}
+
+.icecream__button--left {
+    width: 38px;
+    height: 38px;
+    background-image: url(./images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    top: 282px;
+    left: 1px;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.icecream__button--right {
+    width: 38px;
+    height: 38px;
+    background-image: url(./images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+    top: 282px;
+    left: 313px;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.promo__slider--slide-1 .icecream__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 629px;
+    padding-top: 3px;
+    position: relative;
 }
 
-.icecream__item {
-    padding: 20px;
+.promo__slider--slide-1 .icecream__item {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.promo__slider--slide-1 .icecream__image--banana {
+    margin-top: 8px;
+    margin-left: 23px;
+    object-fit: cover;
+}
+
+.promo__slider--slide-1 .icecream__image--marshmallow {
+    margin-top: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
+    width: 82px;
 }
 
 .promo__slider--slide-1 .icecream__image--strawberry {
     width: 306px;
     height: 507px;
+    position: relative;
 }
 
 .promo__slider--slide-1 .icecream__image--banana,
 .promo__slider--slide-1 .icecream__image--marshmallow {
-    width: 66px;
-    height: 150px;
+    height: 149px;
+    position: relative;
+    opacity: 0.4;
+}
+
+.promo__slider--slide-1 .icecream__item--strawberry::before {
+    content: "";
+    width: 312px;
+    height: 312px;
+    background: $superlight-pink;
+    border-radius:50%;
+    position: absolute;
+    top: 123px;
+    left: 20px;
+}
+
+.promo__slider--slide-1 .icecream__item--banana::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: $superlight-pink;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 231px;
+    left: 388px;
+}
+
+.promo__slider--slide-1 .icecream__item--marshmallow::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: $superlight-pink;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 231px;
+    left: 529px;
+}
+
+.promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo__pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.promo__bullet {
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.promo__button {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: $extra-light;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.promo__social {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.promo__link--telegram {
+    display: block;
+    background-image: url(./images/telegram.svg);
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+
+.promo__link--vkontakte {
+    display: block;
+    background-image: url(./images/vkontakte.svg);
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+
+.promo__link--youtube {
+    display: block;
+    background-image: url(./images/youtube.svg);
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+
+// slide-2
+
+.promo__slider--slide-2 .icecream__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 629px;
+    padding-top: 3px;
+    position: relative;
+}
+
+.promo__slider--slide-2 .icecream__item {
+    padding-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.promo__slider--slide-2 .icecream__image--banana {
+    margin-top: 0;
+    margin-left: 0;
     object-fit: cover;
+    position: relative;
+}
+
+.promo__slider--slide-2 .icecream__image--marshmallow {
+    margin-top: 9px;
+    margin-left: 11px;
+    width: 82px;
+}
+
+.promo__slider--slide-2 .icecream__image--strawberry {
+    margin-top: 9px;
+    margin-right: 2px;
+    width: 89px;
+}
+
+.promo__slider--slide-2 .icecream__image--strawberry,
+.promo__slider--slide-2 .icecream__image--marshmallow {
+    height: 149px;
+    opacity: 0.4;
+    position: relative;
+}
+
+.promo__slider--slide-2 .icecream__item--banana::before {
+    content: "";
+    width: 312px;
+    height: 312px;
+    background: $light-blue;
+    border-radius:50%;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.promo__slider--slide-2 .icecream__item--marshmallow::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: $light-blue;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 53px;
+    left: 22px;
+}
+
+.promo__slider--slide-2 .icecream__item--strawberry::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: $light-blue;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 53px;
+    left: 11px;
+}
+
+// slider-3
+
+.promo__slider--slide-3 .icecream__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 629px;
+    padding-top: 3px;
+    position: relative;
+}
+
+.promo__slider--slide-3 .icecream__item {
+    position: relative;
+}
+
+.promo__slider--slide-3 .icecream__image--marshmallow {
+    margin-top: 22px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.promo__slider--slide-3 .icecream__image--strawberry {
+    margin-top: 28px;
+    margin-left: 21px;
+    width: 89px;
+}
+
+.promo__slider--slide-3 .icecream__image--banana {
+    margin-top: 27px;
+    margin-right: 4px;
+    object-fit: cover;
+}
+
+.promo__slider--slide-3 .icecream__image--strawberry,
+.promo__slider--slide-3 .icecream__image--banana{
+    height: 149px;
+    opacity: 0.4;
+    position: relative;
+}
+
+.promo__slider--slide-3 .icecream__item--marshmallow::before {
+    content: "";
+    width: 312px;
+    height: 312px;
+    background: $light-yellow;
+    border-radius:50%;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.promo__slider--slide-3 .icecream__item--strawberry::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: $light-yellow;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 52px;
+    left: 12px;
+}
+
+.promo__slider--slide-3 .icecream__item--banana::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: $light-yellow;
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: 51px;
+    left: -6px;
 }

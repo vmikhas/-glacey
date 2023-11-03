@@ -1,0 +1,76 @@
+.present {
+    padding-top: 77px;
+}
+
+.present__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 46px;
+}
+
+.present__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.present__item {
+    width: 570px;
+    border-radius: 16px;
+    background-color: $neutral-pink;
+    margin-top: 54px;
+    padding-top: 37px;
+    padding-left: 36px;
+}
+
+.present__item--raspberries::before {
+    content: "";
+    background-image: url(./images/raspberries.png);
+    background-size: cover;
+    width: 219px;
+    height: 268px;
+    position: absolute;
+    top: 54px;
+    left: 351px;
+}
+
+.present__item--marshmallow::before {
+    content: "";
+    background-image: url(./images/marshmallow.png);
+    background-size: cover;
+    width: 219px;
+    height: 268px;
+    position: absolute;
+    top: 54px;
+    left: 951px;
+}
+
+.present__title-item {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 27px;
+}
+
+.present__text {
+    margin-bottom: 39px;
+}
+
+.present__link {
+    font-weight: 700;
+    line-height: 20px;
+    color: inherit;
+    text-decoration: none;
+    padding: 12px 32px;
+    background-color: $extra-light;
+    border: 4px rgba(252, 252, 252, 0.40);
+    border-radius: 26px;
+}
+
+.present__item div {
+    margin-bottom: 47px;
+}

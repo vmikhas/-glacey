@@ -1,0 +1,109 @@
+.popular {
+    padding-top: 82px;
+}
+
+.popular__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 46px;
+}
+
+.popular__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.popular__item {
+    width: 270px;
+    background-color: $extra-light;
+    border-radius: 8px;
+    margin-top: 106px;
+}
+
+.popular__item--raspberry::before {
+    content: "";
+    background-image: url(./images/raspberry.png);
+    background-size: cover;
+    width: 184px;
+    height: 184px;
+    position: absolute;
+    top: 55px;
+    left: 39px;
+}
+
+.popular__item--pistachio::before {
+    content: "";
+    background-image: url(./images/pistachio.png);
+    background-size: cover;
+    width: 184px;
+    height: 184px;
+    position: absolute;
+    top: 55px;
+    left: 339px;
+}
+
+.popular__item--blueberry::before {
+    content: "";
+    background-image: url(./images/blueberry.png);
+    background-size: cover;
+    width: 184px;
+    height: 184px;
+    position: absolute;
+    top: 55px;
+    left: 639px;
+}
+
+.popular__item--bubble::before {
+    content: "";
+    background-image: url(./images/bubble.png);
+    background-size: cover;
+    width: 184px;
+    height: 184px;
+    position: absolute;
+    top: 55px;
+    left: 939px;
+}
+
+.popular__title-item {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 133px;
+}
+
+.popular__description {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.popular__price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.popular__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 4px;
+}
+
+.popular__button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: $extra-pink;
+    cursor: pointer;
+    margin-right: 4px;
+}
