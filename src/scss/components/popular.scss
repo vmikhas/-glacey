@@ -89,6 +89,7 @@
     align-items: center;
     margin-top: 16px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .popular__text {
@@ -106,4 +107,52 @@
     background-color: $extra-pink;
     cursor: pointer;
     margin-right: 4px;
+}
+
+.popular__button--raspberry::before {
+    content: "";
+    background-image: url(./images/cart-white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: 205px;
+}
+
+.popular__button--pistachio::before {
+    content: "";
+    background-image: url(./images/cart-white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: 205px;
+}
+
+.popular__button--blueberry::before {
+    content: "";
+    background-image: url(./images/cart-white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: 205px;
+}
+
+.popular__button--bubble::before {
+    content: "";
+    background-image: url(./images/cart-white.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: 205px;
 }
